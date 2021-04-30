@@ -27,7 +27,7 @@
 
     <!--Login-->
     <section id="login">
-        <form action="/action_page.php" method="post">
+        <form action="/action_page.php" method="post" id="loginpart">
             <div class="container">
                 <div class="login">
                     <h2>Login</h2><hr>
@@ -42,9 +42,30 @@
             <div class="container">
                 <label><input type="checkbox" checked="checked" name="remember"> Remember me </label>
                 <div class="psw">Forgot <a href="#">password?</a></div>
+                <div class="regis">Don't have Account? <a href="#" onclick="gotoRegi()">Join</a> </div>
             </div>
-            
         </form>
+        
+        <form action="/action_page.php" method="post" id="registerpart">
+            <div class="container">
+                <div class="register">
+                    <h2>Create your Account</h2><hr>
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <label for="pswR"><b>Repeat Password </b></label>
+                    <input type="password" placeholder="Repeat Password" name="pswR" required>
+                    <p><button type="submit">Register</button></p>
+                                         
+                </div>
+            </div>
+            <div class="container">
+                <div class="log">Already have an account? <a href="#" onclick="gotoLog()"> Login </a> </div>
+            </div>
+        </form>
+
+
     </section>
 
     <!--Login part end-->
@@ -72,6 +93,25 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        var login = document.getElementById("loginpart");
+        var register = document.getElementById("registerpart");
+
+        register.style.display = "none";
+
+
+        function gotoRegi() {
+            login.style.display = "none";
+            register.style.display = "block";
+        }
+
+        function gotoLog() {
+            login.style.display = "block";
+            register.style.display = "none";
+        }
+
+    </script>
 
 
 </body>
