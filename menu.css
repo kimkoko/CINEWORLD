@@ -134,20 +134,20 @@ div h3 {
     width:30%;
 }
 
-.login h2 {
+#login h2 {
     font-size: 40px;
 }
 
-.login hr {
+#login hr {
     margin-top : -20px;
     margin-bottom: 35px;
 }
 
-.login label b {
+#login label b {
     font-size: 18px;
 }
 
-.login input[type=text], input[type=password] {
+#login input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 10px 0;
@@ -155,7 +155,7 @@ div h3 {
     box-sizing: border-box;
 }
 
-.login button {
+#login button {
     background-color: #D21404;
     color: white;
     border: 0px;
@@ -167,6 +167,16 @@ div h3 {
 
 .container .psw {
     float:right;
+}
+
+.container .regis {
+    text-align: center;
+    padding-top:13px;
+}
+
+.container .log {
+    text-align: center;
+    padding-top: 10px;
 }
 
 #login .container:last-child {
