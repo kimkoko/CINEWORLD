@@ -1,245 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CINEWORLD</title>
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="swiper.css">
-
+    <link rel="stylesheet" href="app.css">
 </head>
-
 <body>
-    <!--header part-->
     <header id="header">
         <div class="container">
             <div class="header">
                 <h1><a href="index.html"><img src="img/logo.png" alt="CINEWORLD"></a></h1>
-                <nav class="nav"> 
+                <nav class="nav">
                     <ul>
-                        <li><a href="bookings.html"> Bookings </a></li>
-                        <li><a href="events.html"> Events </a></li>
-                        <li><a href="login.html"> Login </a></li>
+                        <li><a href="bookings.html">Bookings</a></li>
+                        <li><a href="tickets.html">Tickets</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="login.html">Login</a></li>
                     </ul>
                 </nav>
             </div>
-        </div>    
+        </div>
     </header>
-    <!--end header part-->
 
-    <!--banner-->
     <section id="banner">
         <div class="slider">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide first"> </div>
-                    <div class="swiper-slide second"> </div>
-                    <div class="swiper-slide third"> </div>
+                    <div class="swiper-slide first"></div>
+                    <div class="swiper-slide second"></div>
+                    <div class="swiper-slide third"></div>
                 </div>
-
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-
             </div>
         </div>
     </section>
-    <!--end banner-->
 
-    <!--movie chart-->
     <section id="chart">
         <div class="container">
             <div class="movie">
                 <div class="title">Recommended Movies<hr></div>
                 <div class="movieTitle">
                     <ul>
-                        <li class="tap active" id="list1"><a href="#chart" onclick="firstTap()">Movie Chart</a></li>
-                        <li class="tap" id="list2"><a href="#chart" onclick="secondTap()">Coming Soon</a></li>
-                        <li class="tap" id="list3"><a href="#chart" onclick="thirdTap()">Recent Releases</a></li>
+                        <li class="tap active" data-tab="contentF"><a href="#chart">Movie Chart</a></li>
+                        <li class="tap" data-tab="contentS"><a href="#chart">Coming Soon</a></li>
+                        <li class="tap" data-tab="contentT"><a href="#chart">Recent Releases</a></li>
                     </ul>
                 </div>
                 <div class="movieChart">
-                    <div class="content" id ="contentF">
-                        <div>
-                            <div class="poster">
-                                <img src="img/poster1.jpg" alt="The Courier">
-                                <div class="rank">1</div>
-                                <div class="age">15</div>
-                            </div>
-                            <div class="info">
-                                <h3>The Courier</h3>
-                                <a href="bookings.html">Booking</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="poster">
-                                <img src="img/poster2.jpg" alt="Minari">
-                                <div class="rank">2</div>
-                                <div class="age">12</div>
-                            </div>
-                            <div class="info">
-                                <h3>Minari</h3>
-                                <a href="bookings.html">Booking</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="poster">
-                                <img src="img/poster3.jpg" alt="Soul">
-                                <div class="rank">3</div>
-                                <div class="age">7</div>
-                            </div>
-                            <div class="info">
-                                <h3>Soul</h3>
-                                <a href="bookings.html">Booking</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="poster">
-                                <img src="img/poster4.jpg" alt="Gone with the Wind">
-                                <div class="rank">4</div>
-                                <div class="age">12</div>
-                            </div>
-                            <div class="info">
-                                <h3>Gone with the Wind</h3>
-                                <a href="bookings.html">Booking</a>
-                            </div>
-                        </div>
-                        
-                    </div> <!--Movie Chart-->
-
-                    <div class="contents" id ="contentS">
-                        <div>
-                            <div class="poster">
-                                <img src="img/poster5.jpg" alt="Story of Rainy Days">
-                                <div class="rank">1</div>
-                                <div class="age">12</div>
-                            </div>
-                            <div class="info">
-                                <h3>Story of Rainy Days</h3>
-                                <a href="bookings.html">Booking</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="poster">
-                                <img src="img/poster6.jpg" alt="Cruella">
-                                <div class="rank">2</div>
-                                <div class="age">15</div>
-                            </div>
-                            <div class="info">
-                                <h3>Cruella</h3>
-                                <a href="bookings.html">Booking</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="poster">
-                                <img src="img/poster7.jpg" alt="Young Adult Matters">
-                                <div class="rank">3</div>
-                                <div class="age">18</div>
-                            </div>
-                            <div class="info">
-                                <h3>Young Adult Matters</h3>
-                                <a href="bookings.html">Booking</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="poster">
-                                <img src="img/poster8.jpg" alt="Detective Conan">
-                                <div class="rank">4</div>
-                                <div class="age">7</div>
-                            </div>
-                            <div class="info">
-                                <h3>Detective Conan</h3>
-                                <a href="bookings.html">Booking</a>
-                            </div>
-                        </div>
-                    </div> <!--Coming Soon-->
-
-                    <div class="contents" id ="contentT">
-                        <div>
-                            <div class="poster">
-                                <img src="img/poster2.jpg" alt="Minari">
-                                <div class="rank">1</div>
-                                <div class="age">12</div>
-                            </div>
-                            <div class="info">
-                                <h3>Minari</h3>
-                                <a href="bookings.html">Booking</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="poster">
-                                <img src="img/poster9.jpg" alt="Flipped">
-                                <div class="rank">2</div>
-                                <div class="age">12</div>
-                            </div>
-                            <div class="info">
-                                <h3>Flipped</h3>
-                                <a href="bookings.html">Booking</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="poster">
-                                <img src="img/poster4.jpg" alt="Gone with the Wind">
-                                <div class="rank">3</div>
-                                <div class="age">12</div>
-                            </div>
-                            <div class="info">
-                                <h3>Gone with the Wind</h3>
-                                <a href="bookings.html">Booking</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="poster">
-                                <img src="img/poster10.jpg" alt="The Marksman">
-                                <div class="rank">4</div>
-                                <div class="age">15</div>
-                            </div>
-                            <div class="info">
-                                <h3>The Marksman</h3>
-                                <a href="bookings.html">Booking</a>
-                            </div>
-                        </div>
-                    </div> <!--Recent Realeses-->
+                    <div class="content" id="contentF"></div>
+                    <div class="contents" id="contentS" style="display:none"></div>
+                    <div class="contents" id="contentT" style="display:none"></div>
                 </div>
             </div>
         </div>
     </section>
-    <!--Movie chart end-->
 
-    <!--Trailer-->
     <section id="trailer">
         <div class="container">
             <div class="trailer">
                 <h2>Trailer</h2><hr>
                 <div class="trailerVid">
-                    <iframe src="https://www.youtube.com/embed/KQ0gFidlro8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p id="trailer-label">Minari</p>
+                    <iframe id="main-trailer" src="https://www.youtube.com/embed/KQ0gFidlro8" title="Minari trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="trailerInfo">
                     <h3>Other Trailers</h3>
-                    <iframe src="https://www.youtube.com/embed/oeYElSu3gEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/xOsLIiBStEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div id="trailer-side"></div>
                 </div>
             </div>
         </div>
     </section>
-    <!--Trailer end-->
 
-    <!--Event-->
     <section id="event">
         <div class="container">
             <div class="event">
                 <h2>Event<hr></h2>
                 <div class="eventContent">
                     <ul>
-                        <li><a href="events.html"><img src="img/event1.jpeg"></a></li>
-                        <li><a href="events.html"><img src="img/event2.jpeg"></a></li>
-                        <li><a href="events.html"><img src="img/event3.jpeg"></a></li>
-                        <li><a href="events.html"><img src="img/event4.jpeg"></a></li>
+                        <li><a href="events.html?id=6"><img src="img/event1.jpeg" alt="Flipped re-release"></a></li>
+                        <li><a href="events.html?id=5"><img src="img/event2.jpeg" alt="Gone with the Wind re-release"></a></li>
+                        <li><a href="events.html?id=4"><img src="img/event3.jpeg" alt="VISA discount"></a></li>
+                        <li><a href="events.html?id=3"><img src="img/event4.jpeg" alt="Ilsan opening"></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-    <!--Event end-->
 
     <footer>
         <div class="container">
@@ -248,7 +99,7 @@
             </div>
             <div class="sns">
                 <ul>
-                    <li class="icon insta"><a href="https://www.instagram.com/cineworld190/" target=_blank><img src="img/instagram.png" alt="instagram"></a></li>
+                    <li class="icon insta"><a href="https://www.instagram.com/cineworld190/" target="_blank"><img src="img/instagram.png" alt="instagram"></a></li>
                     <li class="icon twt"><a href="https://twitter.com/cineworld190" target="_blank"><img src="img/twitter.png" alt="twitter"></a></li>
                     <li class="icon fb"><a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="facebook"></a></li>
                 </ul>
@@ -258,79 +109,17 @@
             <div class="footerInfo">
                 <ul>
                     <li>27F, 300, Olympic-ro, Songpa-gu, Seoul, Republic of Korea</li>
-                    <li>About Us Terms&Conditions Privacy Policy</li>
-                    <li>© CINEWORLD. All Rights Reserved</li>
+                    <li>About Us Terms&amp;Conditions Privacy Policy</li>
+                    <li>&copy; CINEWORLD. All Rights Reserved</li>
                 </ul>
             </div>
         </div>
     </footer>
 
     <script src="swiper.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container',{
-            pagination: {
-                el: '.swiper-pagination',
-                type:'bullets', 
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            autoplay: {
-                delay: 3000,
-            },
-        });
-
-        
-        var cont1 = document.getElementById("contentF");
-        var cont2 = document.getElementById("contentS");
-        var cont3 = document.getElementById("contentT");
-
-        cont2.style.display = "none";
-        cont3.style.display = "none";
-
-        var list1 = document.getElementById("list1");
-        var list2 = document.getElementById("list2");
-        var list3 = document.getElementById("list3");
-
-
-        function firstTap() {
-            list1.classList.remove("active");
-            list2.classList.remove("active");
-            list3.classList.remove("active");
-            list1.classList.add("active");
-
-            cont1.style.display = "block";
-            cont2.style.display = "none";
-            cont3.style.display = "none";
-        }
-
-        function secondTap() {
-            list1.classList.remove("active");
-            list2.classList.remove("active");
-            list3.classList.remove("active");
-            list2.classList.add("active");
-
-            cont1.style.display = "none";
-            cont2.style.display = "block";
-            cont3.style.display = "none";
-        }
-
-        function thirdTap() {
-            list1.classList.remove("active");
-            list2.classList.remove("active");
-            list3.classList.remove("active");
-            list3.classList.add("active");
-
-            cont1.style.display = "none";
-            cont2.style.display = "none";
-            cont3.style.display = "block";
-        }
-        
-
-        
-
-    </script>
-
+    <script src="js/data.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/home.js"></script>
 </body>
 </html>

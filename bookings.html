@@ -1,77 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bookings | CINEWORLD</title>
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="app.css">
 </head>
-
 <body>
-    <!--header part-->
     <header id="header">
         <div class="container">
             <div class="header">
                 <h1><a href="index.html"><img src="img/logo.png" alt="CINEWORLD"></a></h1>
-                <nav class="nav"> 
+                <nav class="nav">
                     <ul>
-                        <li><a href="bookings.html"> Bookings </a></li>
-                        <li><a href="events.html"> Events </a></li>
-                        <li><a href="login.html"> Login </a></li>
+                        <li><a href="bookings.html">Bookings</a></li>
+                        <li><a href="tickets.html">Tickets</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="login.html">Login</a></li>
                     </ul>
                 </nav>
             </div>
-        </div>    
+        </div>
     </header>
-    <!--end header part-->
 
     <section id="booking">
-        <form>
-            <div class="container">
-                <div class="bookingTitle">
-                    <h2>Ticket Booking</h2><hr>
-                </div>
-                <div class="selectMovie">
-                    <h3>Movie</h3>
-                    <select id="movie">
-                        <option value="Detective Conan">Detective Conan</option>
-                        <option value="Flipped">Flipped</option>
-                        <option value="Gone with the Wind">Gone with the Wind</option>
-                        <option value="Minari">Minari</option>
-                        <option value="Soul">Soul</option>
-                        <option value="The Spy">The Spy</option>
-                    </select>
-                </div>
-                <div class="selectLocation">
-                    <h3>Location</h3>
-                    <select id="location">
-                        <option value="Dogok">Dogok</option>
-                        <option value="Gangdong">Gangdong</option>
-                        <option value="Gangnam">Gangnam</option>
-                        <option value="Hongdae Univ">Hongdae Univ</option>
-                        <option value="Jangan">Jangan</option>
-                        <option value="Nowon">Nowon</option>
-                        <option value="Sindorim">Sindorim</option>
-                        <option value="Yongsan">Yongsan</option>
-                    </select>
-                </div>
-                <div class="selctDate">
-                    <h3>Date</h3>
-                    <input type="date">
-                </div>
-                <div class="selectTime">
-                    <h3>Time</h3>
-                    <input type="time">
-                </div>
-                <div class="buttons">
-                    <input type="submit" value="confirm">
-                    <input type="reset" value="reset">
-                </div>
+        <div class="container booking-wrap">
+            <div class="bookingTitle">
+                <h2>Ticket Booking</h2><hr>
             </div>
-        </form>
+            <p class="fine">Choose a film, a branch, and your seats. A ticket is ₩12,000, and it stays in this browser until you cancel it.</p>
+            <ol class="steps" id="steps"></ol>
+            <div id="booking-root"></div>
+        </div>
     </section>
-
-    
 
     <footer>
         <div class="container">
@@ -80,7 +43,7 @@
             </div>
             <div class="sns">
                 <ul>
-                    <li class="icon insta"><a href="https://www.instagram.com/cineworld190/" target=_blank><img src="img/instagram.png" alt="instagram"></a></li>
+                    <li class="icon insta"><a href="https://www.instagram.com/cineworld190/" target="_blank"><img src="img/instagram.png" alt="instagram"></a></li>
                     <li class="icon twt"><a href="https://twitter.com/cineworld190" target="_blank"><img src="img/twitter.png" alt="twitter"></a></li>
                     <li class="icon fb"><a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="facebook"></a></li>
                 </ul>
@@ -90,13 +53,16 @@
             <div class="footerInfo">
                 <ul>
                     <li>27F, 300, Olympic-ro, Songpa-gu, Seoul, Republic of Korea</li>
-                    <li>About Us Terms&Conditions Privacy Policy</li>
-                    <li>© CINEWORLD. All Rights Reserved</li>
+                    <li>About Us Terms&amp;Conditions Privacy Policy</li>
+                    <li>&copy; CINEWORLD. All Rights Reserved</li>
                 </ul>
             </div>
         </div>
     </footer>
 
-
+    <script src="js/data.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/booking.js"></script>
 </body>
 </html>
